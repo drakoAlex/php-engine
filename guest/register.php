@@ -1,5 +1,5 @@
 <?php top('Регистрация'); ?>
-<form action="#" id="reg_form">
+<form id="reg_form">
 	<h1>Регистрация</h1>
 	<p><input type="text" placeholder="E-mail" id="reg_name"></p>
 	<p><input type="password" placeholder="Password" id="reg_pass"></p>

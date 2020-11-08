@@ -1,5 +1,5 @@
 <?php top('Подтверждение'); ?>
-<form action="#" id="conf_form">
+<form id="conf_form">
 	<h1>Подтверждение</h1>
 	<p><input type="text" placeholder="E-mail" id="conf_name"></p>
 	<p><input type="password" placeholder="Password" id="conf_pass"></p>

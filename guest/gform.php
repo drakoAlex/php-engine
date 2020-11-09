@@ -1,6 +1,6 @@
 <?php
 if($_POST[login_f]){
-	message('Авторизация');
+	capchaValid();
 }else if($_POST[register_f]){
 	go('login');
 }else if($_POST[recovery_f]){

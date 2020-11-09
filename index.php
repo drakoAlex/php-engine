@@ -29,6 +29,36 @@ function go($url){
 	echo json_encode(["go" => $url]);
 }
 
+function capchaShow(){
+	$questions = array(
+		1=>'Столица России?',
+		2=>'Столица Украины?',
+		3=>'Столица США?',
+		4=>'Имя короля поп музыки?',
+		5=>'Разработчик GTA 5?',
+	);
+
+	$num = mt_rand(1,count($questions));
+	$_SESSION['captcha']=$num;
+	echo $questions[$num];
+}
+
+function capchaValid(){
+	$answers = array(
+		1=>'москва',
+		2=>'киев',
+		3=>'вашингтон',
+		4=>'майкл',
+		5=>'rockstar',
+	);
+	$result = array_search(strtolower($_POST['captcha']), $answers);
+	if (!is_numeric($result) or $_SESSION['captcha'] != $result) {
+		message('Ответ на вопрос указан неверно');
+	}else{
+		message('ok');
+	}
+}
+
 function top($title){
    echo "
    <!DOCTYPE html>

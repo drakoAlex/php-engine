@@ -27,22 +27,22 @@ $(function () {
 
 	$('#login_button').click(function (e) {
 		e.preventDefault();
-		loginForm('gform', 'login', 'login_name.login_pass.login_capcha');
+		loginForm('gform', 'login', 'login_name.login_pass.captcha');
 	});
 
 	$('#rec_button').click(function (e) {
 		e.preventDefault();
-		loginForm('gform', 'recovery', 'rec_name.rec_capcha');
+		loginForm('gform', 'recovery', 'rec_name.captcha');
 	});
 
 	$('#reg_button').click(function (e) {
 		e.preventDefault();
-		loginForm('gform', 'register', 'reg_name.reg_pass.reg_capcha');
+		loginForm('gform', 'register', 'reg_name.reg_pass.captcha');
 	});
 
 	$('#conf_button').click(function (e) {
 		e.preventDefault();
-		loginForm('gform', 'confirm', 'conf_name.conf_pass.conf_capcha');
+		loginForm('gform', 'confirm', 'conf_name.conf_pass.captcha');
 	});
 
 });
